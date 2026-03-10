@@ -1,0 +1,8 @@
+# JabRef backups
+*.sav
+*.bak
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
