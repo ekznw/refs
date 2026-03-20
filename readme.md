@@ -165,9 +165,6 @@ The standardisation of the reference DB's directory shown below.
 <<<<<<< HEAD
 
 | Folder | Description |
-=======
-| Folder   | Description |
->>>>>>> parent of e11dc20 (test change)
 |--|-------------|
 |📁files | Standard directory for reference documents. When files are 'drag-n-dropped' onto a citation in JabRef they are automatically stored in the libraries (reference DB) default location for files. <br> Set the default file location by 'top menu' `'Library'` ➡️ `'Library properties'` ➡️ Enter the path e.g., `./files` for the above scenario.|
 |📁scripts | General scripts BSPI uses to modify the BibTeX files. No need for users to use this ― deleting this will not break the library functionality.|
