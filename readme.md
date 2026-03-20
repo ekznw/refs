@@ -186,9 +186,75 @@ In MS Word and Google docs there are a number of add-ons that you can use for ci
 | Bookdown | [Bookdown](https://www.bookdown.org) | Excellent integration with BibTeX. Good for complex or larger documents. Knowledge of markdown coding needed. |
 | LaTeX | [LaTeX](https://www.latex-project.org/) | Excellent integration with BibTeX. Best for complex or larger documents. Most customizable. Need to learn LaTeX document structure and coding. |
 
-## GitHub collaboration
+# 🟦 GitHub collaboration
 
 The simple setup with GitHub involves the following steps.
 
 1. Install VSCodium [from here](https://vscodium.com/).
-2. 
+
+---
+
+# 🟢 How to collaborate on the BSPI reference database (for non‑coders)
+
+This section explains how anyone at Ezemvelo KZN Wildlife can help update or correct the shared **BSPI citation database**, even without Git or coding experience.
+
+## Option 1: Edit directly on GitHub (easiest)
+
+1. Open the repository in your browser:  
+   👉 https://github.com/ekznw/refs  
+2. Click on **bspi_lib.bib**  
+3. Click the **✏️ pencil icon** to edit  
+4. Make your changes  
+5. Scroll down → write a short description  
+6. Click **Commit changes**
+
+That’s it — your update is saved.
+
+---
+
+## Option 2: Work locally on your computer (recommended for bigger edits)
+
+### Step 1 — Install VSCodium
+ - [from here](https://vscodium.com/)
+
+### Step 2 — Install Git
+- Windows: https://gitforwindows.org  
+- Ubuntu: already installed by default
+
+### Step 3 — Clone the repository to local folder
+1. Open VS Code / Codium  
+2. Press **Ctrl+Shift+P**  
+3. Type **Git: Clone**  
+4. Paste this link: https://github.com/ekznw/refs.git
+5. Choose a folder  
+6. Open the folder when prompted  
+
+### Step 4 — Edit the references  
+You may:
+- Open `bspi_lib.bib` in **JabRef**, or  
+- Edit the file directly in VS Code  
+
+### Step 5 — Upload your changes  
+In the VS Code Source Control panel:
+
+1. Stage changes (`+`)  
+2. Write a commit message  
+3. Click **Push**  
+
+If VS Code shows “divergent branch” messages, ask Paul — this is normal and easy to resolve.
+
+---
+
+## Why we use GitHub for citation management
+
+- Everyone works from **one master list**
+- Changes are tracked and reversible
+- Clean integration with:
+- JabRef  
+- R + Quarto  
+- LaTeX & Pandoc  
+- No more “emailing BibTeX files around”
+
+It’s also an easy way for colleagues to start learning coding concepts in a practical, low‑risk way.
+
+---
