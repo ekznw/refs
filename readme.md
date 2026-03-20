@@ -1,8 +1,8 @@
-<img src="../images/ekznw120.png" align="right">
+<img src="./imgs/ekznw120.png" align="right">
 </br>
 </br>
 
-# Biodiversity, Spatial Planning & Information:<br> GIS reference database <br>
+# Biodiversity, Spatial Planning & Information:<br> Reference database <br>
 
 > <center> Ezemvelo KwaZulu-Natal Wildlife <br> Biodiversity, Spatial Planning & Information, GIS Division </center>
 
@@ -13,13 +13,14 @@
 > **Date:** 20-11-2025
 </center>
 
-> This directory contains the Biodiversity, Spatial Planning & Information's (**BSPI**) reference BibTeX database, and associated miscellaneous scripts for manipulating reference entries, plus information on how to use the database in the ['JabRef' GUI](https://www.jabref.org). For extensive help files on JabRef visit https://www.jabref.org.
+> This directory contains the Biodiversity, Spatial Planning & Information's (**BSPI**) reference BibTeX database, digital copies of reference material (where available), and associated miscellaneous scripts for manipulating reference entries, plus information on how to use the database in the ['JabRef' GUI](https://www.jabref.org). For extensive help files on JabRef visit https://www.jabref.org.
 
 > ### Revision history
 
 > | Date | Author(s)   | Notes |
 > |----------|-------------|-------------|
 > | 20 November 2025 | Paul Gordijn | Draft document for comment. |
+> | 20 March 2026 | Paul Gordijn | Deployment on GitHub for collaboration. |
 
 
 
@@ -28,11 +29,11 @@
 
 __Aim:__ This aim of this document is to describe the purpose of the BSPI GIS reference database, and associated directory functionality.  
 
-The BSPI GIS reference database serves as a literature catalogue primariliy for scientific writing, maintaining, organising and accessing reference metadata and associated softcopy files (e.g., pdfs, htmls, docs, ppts, etc), and citation metadata for relevant BSPI data holdings. The catalogue backend is formatted as 'BibTeX' entries, which are perhaps the most universally used, open source citation-data schema. The format is interchangeable with most reference/citation database managers. Moreover, there is excellent cite-while-you-write functionality for BibTeX files, through pandoc add-ons in LaTeX, RMarkdown, Jupyter, and Quarto. There are also good options for integrating with word processors.
+The BSPI GIS reference database serves as a literature catalogue for cataloguing scientific writing, report writing, dataset citations, and accessing reference metadata and associated digital files (e.g., pdfs, htmls, docs, ppts, etc), and citation metadata for relevant BSPI data holdings. The catalogue backend is formatted as 'BibTeX' entries, which are perhaps the most universally used, open source citation-data schema. The format is interchangeable with most reference/citation database managers. Moreover, there is excellent cite-while-you-write functionality for BibTeX files, through Pandoc add-ons in LaTeX, Quarto, RMarkdown, and Jupyter. There are also good options for integrating with word processors.
 
 ## JabRef
 
-JabRef is an open source (free) reference database system and citation manager. It makes managing citation entries easy, and is highly customizable. Amongst other reference management software JafRef stands out for its flexibility and free availability (unlike EndNote or RefManager). Other programs like Zotero and Mendeley have good free tiers with cloud compatibility, however, storage of files in the free tier is limiting for organizational use. JabRef does not have native cloud functionality, but a team can maintain a shared BibTeX file in a number of ways: either on a shared cloud drive, network drive, or using a SQL database. JaRef is also stronger with BibTeX managers than other propietry equivalents making it the default choice for LateX and Pandoc integration (Quarto or RMarkdown) integration.
+JabRef is an open source (free) reference-database system and citation manager. It makes managing citation entries easier, and it is highly customisable. Amongst other reference management software JafRef stands out for its flexibility and free availability (unlike EndNote or RefManager). Other programs like Zotero and Mendeley have excellant free tiers with cloud compatibility, however, storage of files in the free tier is limiting for organisational use. JabRef does not have native cloud functionality, but a team can maintain a shared BibTeX file in a number of ways: either on a shared cloud drive, network drive, GitHub, or using a SQL/PostGres database. JaRef is a stronger BibTeX manager compared with other proprietary equivalents making it the default choice for LateX and Pandoc integration (Quarto or RMarkdown) integration.
 
 ### Installing JabRef
 
@@ -76,7 +77,7 @@ In JabRef you can optionally enter keywords to ensure your entry is findable.
 #### Follow LOTO for entering keywords:
 
 1. 🌐 **L**ocality (e.g. Cathedral Peak; uKhahlamba Drakensberg; Kwazulu-Natal)
-Remember nearly exclusively all locations are nested within a greater area. Be sure to include these greater areas in your keywords.
+Notice the spatial scale hierarchy above, small to large.
 2. 🎓 C**o**vered disciplines (e.g. soil science; geology; climate; hydrology; vegetation ecology)
 3. 🤔 **T**opic (e.g. stream-flow; fire; land degradation; niche modelling; evapotranspiration)
 4. 👀 **O**bject of attention (e.g. a specific vegetation type, river, earth system component etc)
@@ -118,7 +119,7 @@ BSPI standardises on citation key format to avoid such complications. To use BSP
     `[auth:lower][year][shorttitleINI:lower]-[alpha]`  
 and paste as the default key pattern (hitting 'Return' after paste) then saving. 
     
-    Here is what happens...  
+    Here is what happens ...  
     a. `[auth:lower]` takes the first author's last name (and convert to lower case),  
     b. `[year]` - self explanatory,  
     c.  `[shorttitleINI:lower]` makes three letter abbreviation of the title's first three words.  
@@ -130,7 +131,11 @@ and paste as the default key pattern (hitting 'Return' after paste) then saving.
 
 When you 'drag-n-drop' a file onto an entry the file will be saved to the default 'file' directory (see DB folder structure below) and renamed using the citation key as a name.
 
-
+1. What about different versions of a dataset or report?
+    Options:
+        a. Attach historic versions of data/reports in zipped archive in /files*.
+        a. Only generate different citation entries (citation keys) for different versions where versioning is explicit and structured.
+    * _Preferred option_.
 
 ## 📁 BSPI reference DB folder structure
 
@@ -154,14 +159,14 @@ The standardisation of the reference DB's directory shown below.
 ├── 📁 sync                         # rclone and other sync scripts --- for BSPI
 │                                   # DB management only
 ├── 📄 bspi_lib.bib                 # reference database
-├── 🌐 readme.html                  # readme web file - geneerated by 
 ├── 📝 readme.md                    # readme markdown file
 └── 📕 readme.pdf                   # readme pdf doc
 ```
-| Folder   | Description |
+
+| Folder | Description |
 |--|-------------|
 |📁files | Standard directory for reference documents. When files are 'drag-n-dropped' onto a citation in JabRef they are automatically stored in the libraries (reference DB) default location for files. <br> Set the default file location by 'top menu' `'Library'` ➡️ `'Library properties'` ➡️ Enter the path e.g., `./files` for the above scenario.|
-|📁scripts | General scripts BSPI uses to modify the BibTeX files. No need for users to use this - deleting this will not break the library functionality.|
+|📁scripts | General scripts BSPI uses to modify the BibTeX files. No need for users to use this ― deleting this will not break the library functionality.|
 |📁sync | Script for making backups of the data using Rclone. Don't worry about this if you don't use Rclone. |
 
 ## 📁 Cite-while-you-write
@@ -180,3 +185,10 @@ In MS Word and Google docs there are a number of add-ons that you can use for ci
 | RMarkdown | [RMarkdown](https://quarto.org/docs/get-started/hello/rstudio.html) | Excellent integration with BibTeX. Knowledge of markdown coding needed. |
 | Bookdown | [Bookdown](https://www.bookdown.org) | Excellent integration with BibTeX. Good for complex or larger documents. Knowledge of markdown coding needed. |
 | LaTeX | [LaTeX](https://www.latex-project.org/) | Excellent integration with BibTeX. Best for complex or larger documents. Most customizable. Need to learn LaTeX document structure and coding. |
+
+## GitHub collaboration
+
+The simple setup with GitHub involves the following steps.
+
+1. Install VSCodium [from here](https://vscodium.com/).
+2. 

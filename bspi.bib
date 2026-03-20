@@ -130,7 +130,7 @@
   note        = {Word document sent to Paul Gordijn by Clint Carbutt.},
   type        = {techreport},
   cid         = {RT_EKZNW_2021_Escott},
-  file        = {:escott2021nmb.docx:Word 2007+},
+  file        = {:escott2021nmb.docx:Word 2007+;:escott2021nmb.zip:zip},
   groups      = {conservation plan,},
 }
 
@@ -361,17 +361,19 @@
 }
 
 
-@Techreport{escott2010cpw,
-  ADDRESS = {1 Peter Brown Dr, Montrose, ZA},
-  AUTHOR = {Boyd Escott},
-  INSTITUTION = {Ezemvelo KZN Wildlife},
-  MONTH = {feb},
-  NUMBER = {2},
-  TITLE = {Conservation Plan Work Notes},
-  TYPE = {techreport},
-  YEAR = {2010},
-  CID = {RT_EKZNW_2010_Escott},
-  FILE = {:escott2010cpw.txt:Text}
+@TechReport{escott2010cpw,
+  author      = {Boyd Escott},
+  institution = {{Ezemvelo KZN Wildlife}},
+  title       = {Conservation Plan Work Notes},
+  year        = {2010},
+  address     = {1 Peter Brown Dr, Montrose, ZA},
+  month       = {feb},
+  note        = {There was no single reference source for the 2010 conservation plan. Miscellaneous documents and working notes have been included in the file attachments with this citation.},
+  number      = {2},
+  type        = {techreport},
+  cid         = {RT_EKZNW_2010_Escott},
+  file        = {:escott2010cpw.txt:Text;:escott2010cpw.zip:zip},
+  groups      = {c-plan,scp},
 }
 
 
@@ -655,15 +657,15 @@
 }
 
 
-@Techreport{loetter2015trf,
-  ADDRESS = {Mbombela (Nelspruit), ZA},
-  AUTHOR = {Mervyn Lötter},
-  INSTITUTION = {Mpumalanga Tourism and Parks Agency},
-  TITLE = {Techinical Report for the Mpumalanga Biodiversity Sector Plan -- MBSP},
-  TYPE = {techreport},
-  YEAR = {2015},
-  CID = {RT_MTPA_2015_Lotter},
-  FILE = {:loetter2015trf.pdf:PDF}
+@TechReport{lotter2015trf,
+  author      = {Mervyn Lötter},
+  institution = {Mpumalanga Tourism and Parks Agency},
+  title       = {Techinical Report for the Mpumalanga Biodiversity Sector Plan -- MBSP},
+  year        = {2015},
+  address     = {Mbombela (Nelspruit), ZA},
+  type        = {techreport},
+  cid         = {RT_MTPA_2015_Lotter},
+  file        = {:lotter2015trf.pdf:PDF},
 }
 
 
@@ -1185,8 +1187,70 @@
   file         = {:default.docx:Word 2007+},
 }
 
+@TechReport{escott2009itk,
+  author      = {Escott, Boyd},
+  institution = {{Ezemvelo KZN Wildlife}},
+  title       = {Incorporating the KZN Wetland coverage into C-Plan Work notes: Last updated 04 December 2009 by Boyd},
+  year        = {2009},
+  address     = {1 Peter Brown Drive, Montrose, Pietermaritzburg, ZA},
+  type        = {techreport},
+  file        = {:escott2009itk.txt:Text},
+  groups      = {scp, c-plan, wetlands},
+}
+
+@Misc{ekw2021kne,
+  author       = {{Ezemvelo KZN Wildlife}},
+  howpublished = {Draft bill},
+  note         = {Draft bill with comments from Matthew James Burnett},
+  title        = {KwaZulu-Natal environmental, biodiversity, protected areas and human-wildlife interaction management bill, 2021},
+  year         = {2021},
+  file         = {:ekw2021kne.docx:Word 2007+},
+  groups       = {legal,bills,},
+}
+
+@Article{wedding2025bla,
+  author    = {Wedding, LM and Agardy, T and Green, S and Boyle, JS and Fraz{\~a}o Santos, C and Malhi, Y and Crowder, LB},
+  journal   = {npj | Ocean Sustainability},
+  title     = {Bridging land and seascape restoration for ecoscape recovery},
+  year      = {2025},
+  number    = {1},
+  pages     = {31},
+  volume    = {4},
+  file      = {:wedding2025bla.pdf:PDF},
+  publisher = {Nature Publishing Group UK London},
+}
+
+@TechReport{berliner2007ecb,
+  author      = {Derek Berliner and Philip Desmet and Richard Hayes},
+  institution = {Department of Water Affairs and Forestry},
+  title       = {Eastern Cape Biodiversity Conservation Plan Handbook},
+  year        = {2007},
+  address     = {King William's Town, ZA},
+  number      = {Project No 2005-012},
+  type        = {techreport},
+  file        = {:berliner2007ecb.pdf:PDF},
+  isbn        = {978-0-620-39423-9},
+  url         = {http://www.ecoplanner.co.za},
+}
+
+@TechReport{desmet2019ecb,
+  author      = {Philip Desmet and Greer Hawley},
+  institution = {Department of Water Affairs and Forestry},
+  title       = {Eastern Cape Biodiversity Plan 2019: Technical Notes},
+  year        = {2019},
+  address     = {King William's Town, ZA},
+  number      = {Project No 2005-012},
+  type        = {techreport},
+  file        = {:desmet2019ecb.pdf:PDF},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: fileDirectory:./files;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 SearchGroup:Conservation Plans\;0\;title='conservation[' ']plan'\;0\;1\;1\;\;MDI_BARLEY\;Collection of conservation plans\;;
+}
 
 @Comment{jabref-meta: keypatterndefault:[auth:lower][year][shorttitleINI:lower]-[alpha];}
