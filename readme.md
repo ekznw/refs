@@ -158,7 +158,6 @@ The standardisation of the reference DB's directory shown below.
 ├── 📝 readme.md                    # readme markdown file
 └── 📕 readme.pdf                   # readme pdf doc
 ```
-
 | Folder   | Description |
 |--|-------------|
 |📁files | Standard directory for reference documents. When files are 'drag-n-dropped' onto a citation in JabRef they are automatically stored in the libraries (reference DB) default location for files. <br> Set the default file location by 'top menu' `'Library'` ➡️ `'Library properties'` ➡️ Enter the path e.g., `./files` for the above scenario.|
@@ -167,7 +166,7 @@ The standardisation of the reference DB's directory shown below.
 
 ## 📁 Cite-while-you-write
 
-In MS Word and Google docs there are a number of add-ons that you can use for citations. Yes.
+In MS Word and Google docs there are a number of add-ons that you can use for citations.
 
 | Word processor   | Cite-while-you-write integration | Notes |
 |----|---| --------- |
