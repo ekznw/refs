@@ -4,8 +4,8 @@
 # @author: P Gordijn
 
 # Source and destination
-SRC="$HOME/Documents/reference_arc"
-DEST="ekznw_scp:/scp_tech_document"
+SRC="$HOME/refs"
+DEST="bspi_refs:/"
 
 # Log file location --- keeps log of file transfers
 LOGFILE="$HOME/rclone_upload_$(date +'%Y%m%d_%H%M%S').log"
@@ -14,6 +14,9 @@ LOGFILE="$HOME/rclone_upload_$(date +'%Y%m%d_%H%M%S').log"
 #echo "Running dry-run to check what will be synced..."
 rclone sync "$SRC" "$DEST" \
   --exclude "forticlient_details/**" \
+  --exclude ".vscode/**" \
+  --exclude ".git/**" \
+  --exclude "**/.git/**" \
   --progress \
   --checkers=8 \
   --transfers=4 \
