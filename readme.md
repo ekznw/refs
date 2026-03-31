@@ -198,7 +198,7 @@ The simple setup with GitHub involves the following steps.
 
 # 🟢 How to collaborate on the BSPI reference database (for non‑coders)
 
-This section explains how anyone at Ezemvelo KZN Wildlife can help update or correct the shared **BSPI citation database**, even without Git or coding experience.
+This section explains how anyone at Ezemvelo KZN Wildlife can help update or correct the shared **BSPI citation database**.
 
 ## Option 1: Edit directly on GitHub (easiest)
 
@@ -247,16 +247,14 @@ If VS Code shows “divergent branch” messages, ask Paul — this is normal an
 
 ---
 
-## Why we use GitHub for citation management
+## Why GitHub for citation management
 
-- Everyone works from **one master list**
-- Changes are tracked and reversible
-- Clean integration with:
-- JabRef  
-- R + Quarto  
-- LaTeX & Pandoc  
-- No more “emailing BibTeX files around”
-
-It’s also an easy way for colleagues to start learning coding concepts in a practical, low‑risk way.
+- Everyone works from **one master list**,
+- Changes are tracked and reversible,
+- Clean integration with:  
+    - JabRef,  
+    - R + Quarto &  
+    - LaTeX & Pandoc.  
+- No more “emailing BibTeX files around”.
 
 ---
