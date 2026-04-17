@@ -22,7 +22,13 @@
 > | 20 November 2025 | Paul Gordijn | Draft document for comment. |
 > | 20 March 2026 | Paul Gordijn | Deployment on GitHub for collaboration. |
 
-
+---
+> **Important**
+>  
+> The OneDrive or Sharepoint Site: 'bspi_refs' is a backup site.  
+> Sync (mirror) = Master copy → OneDrive.  
+> Changes in OneDrive will *not* propagate back the master copy.
+---
 
 
 ## Context
