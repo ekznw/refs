@@ -35,7 +35,7 @@
 
 __Aim:__ This aim of this document is to describe the purpose of the BSPI GIS reference database, and associated directory functionality.  
 
-The BSPI GIS reference database serves as a literature catalogue for cataloguing scientific writing, report writing, dataset citations, and accessing reference metadata and associated digital files (e.g., pdfs, htmls, docs, ppts, etc), and citation metadata for relevant BSPI data holdings. The catalogue backend is formatted as 'BibTeX' entries, which are perhaps the most universally used, open source citation-data schema. The format is interchangeable with most reference/citation database managers. Moreover, there is excellent cite-while-you-write functionality for BibTeX files, through Pandoc add-ons in LaTeX, Quarto, RMarkdown, and Jupyter. There are also good options for integrating with word processors.
+The BSPI GIS reference database serves as a literature catalogue for cataloguing scientific writing, report writing, dataset citations, and accessing reference metadata and associated digital files (e.g., pdfs, htmls, docs, ppts, etc), and citation metadata for relevant BSPI data holdings. The catalogue backend is formatted as 'BibLaTeX' entries, which are perhaps the most universally used, open source citation-data schema. The format is interchangeable with most reference/citation database managers. Moreover, there is excellent cite-while-you-write functionality for BibTeX files, through Pandoc add-ons in LaTeX, Quarto, RMarkdown, and Jupyter. There are also good options for integrating with word processors.
 
 ## JabRef
 
@@ -55,24 +55,28 @@ Following the rules below will help save time later when searching for reference
 JabRef adheres to BibTeX standards for populating metadata for various types of documents. Selection of the document type must be done appropriately. Different entry types for various types of documents shown below. These entry types are selectable in the JabRef dialog when creating a new entry (top menu: Library ➡️ New entry (CTRL + N)) ➡️ follow the prompts and enter the required metadata.
 
 
-| Entry type     | Synonym            | Description |
+| Entry type | Synonym | Description |
 |--|--|-------------|
-| Article        | Journal Article    | An article from a journal or magazine. |
-| Book           | Book               | A book with an explicit publisher. |
-| Booklet        | Booklet            | A work that is printed and bound, but without a named published or sponsoring institution. |
-| Conference     | In proceedings     | The same as Inproceedings. |
-| Electronic     | Electronic         | Reference to a webpage. |
-| Ieeetranbstctl | Ieeetranbstctl     | Advanced technical usage beyond our scope. |
-| Inbook         | In book            | A part of a book, which may be a chapter (or section etc) and/or a range of pages. |
-| Incollection   | In collection      | A part of a book having its own title. |
-| Inproceedings  | In Proceedings     | A article in a conference proceedings. This is the same as Conference. |
-| Manual         | Manual             | Technical documentation. |
-| Mastersthesis  | Minor thesis       | This is actually a minor thesis NOT a Masters thesis. A minor thesis is a thesis that was done as part of a qualification that included mandatory course work. A qualification by research is a major thesis (see PhD thesis). Generally, in South Africa, minor theses are done at Honors level and below. |
-| Misc           | Miscellaneous      | For data sets and other. |
-| Periodical     | Periodical         | May include narrative and opinion. Written for the general public or interested non-specialist (e.g. news or magazine articles). |
-| Phdthesis      | Major thesis       | This is actually not a PhD thesis BUT a major thesis. A major thesis is done for complete fulfillment of a degree. See also Masters thesis. |
-| Proceedings    | Proceedings        | The proceedings of a conference. |
-| Techreport     | Technical Report   | A general technical report that does not fit the other Technical report types. |
+| Article | Journal Article | An article from a scholarly journal or magazine. Typically peer‑reviewed and identified by volume, issue, pages, and often a DOI. |
+| Book | Book | A book with an explicit publisher. Includes monographs, atlases, and formally published reference works. |
+| Booklet | Booklet | A work that is printed or distributed digitally but without a named publisher or sponsoring institution. Often used for internal guides or pamphlets. |
+| Conference | In Proceedings | Alias of **Inproceedings**. A paper presented at a conference and published as part of the proceedings. |
+| Dataset | Dataset | A dataset or data product, including GIS layers, rasters, vectors, tabular data, or derived spatial products. This is the **preferred entry type for spatial and environmental datasets** maintained by the organisation. |
+| Electronic | Electronic | Legacy type for electronic resources. Retained for backward compatibility, but **Online** is preferred for new entries. |
+| Ieeetranbstctl | Ieeetranbstctl | Advanced technical control entry for IEEE bibliography styles. Not a bibliographic reference. **Not intended for general use in this organisation.** |
+| Inbook | In Book | A part of a book (e.g. a chapter or section) that does not have its own distinct title. |
+| Incollection | In Collection | A part of a book with its own title, typically a chapter in an edited volume. |
+| Inproceedings | In Proceedings | An article published in conference proceedings. This is the canonical entry type for conference papers. |
+| Legal | Legal document | A legal document that is not legislation, such as contracts, agreements, licences, policy instruments, or legal opinions. Useful for internal governance and data‑use documentation. |
+| Legislation | Legislation | Acts, statutes, regulations, proclamations, or other forms of legislation. Suitable for national, provincial, or local laws referenced in reports or metadata (e.g. environmental or biodiversity legislation). |
+| Manual | Manual | Technical documentation, user guides, standards, or procedural manuals, including internal GIS and data management documentation. |
+| Mastersthesis | Minor thesis | A *minor thesis* completed as part of a qualification that includes mandatory coursework. In the South African context this typically includes Honours‑level research projects and some taught Master’s programmes. |
+| Misc | Miscellaneous | A catch‑all type for references that do not fit any other category. Use sparingly. For datasets, **Dataset** should be preferred. |
+| Online | Online resource | An online resource such as a webpage, web application, or living document. Preferred over **Electronic** for web‑based material. |
+| Periodical | Periodical | A complete journal, magazine, or serial publication as a whole (not an individual article). |
+| Phdthesis | Major thesis | A *major thesis* completed in full fulfilment of a degree by research. This includes PhD theses and research‑only Master’s degrees. |
+| Proceedings | Proceedings | The complete published proceedings of a conference, as opposed to an individual paper. |
+| Techreport | Technical Report | A technical report issued by an organisation, government department, or research body. Common for project reports, methodological documents, and assessment reports. |
 
 
 ### 🗝️ Citation keywords
