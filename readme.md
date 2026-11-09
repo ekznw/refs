@@ -76,6 +76,8 @@ JabRef adheres to BibTeX standards for populating metadata for various types of 
 | Periodical | Periodical | A complete journal, magazine, or serial publication as a whole (not an individual article). |
 | Phdthesis | Major thesis | A *major thesis* completed in full fulfilment of a degree by research. This includes PhD theses and research‑only Master’s degrees. |
 | Proceedings | Proceedings | The complete published proceedings of a conference, as opposed to an individual paper. |
+| Software | Program | A software program and/or GUI. |
+| Software | Program | A software program and/or GUI. |
 | Techreport | Technical Report | A technical report issued by an organisation, government department, or research body. Common for project reports, methodological documents, and assessment reports. |
 
 
