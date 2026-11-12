@@ -848,11 +848,11 @@
 }
 
 
-@SoftwareVersion{coreteam2025rv4-a,
+@SoftwareVersion{coreteam2025rv4452-a,
   author           = {{\textsf{R} Core Team}},
   title            = {\textsf{R} Version 4.5.2: A Language and Environment for Statistical Computing},
   url              = {https://www.R-project.org/},
-  version          = {Version 4.5.2},
+  version          = {4.5.2},
   year             = {2025},
   organization     = {\textsf{R} Foundation for Statistical Computing},
   address          = {Vienna, AT},
@@ -904,13 +904,13 @@
 }
 
 
-@SoftwareModule{hijmans2025tsd-a,
+@SoftwareModule{hijmans2025rpt18-86-a,
   author       = {Robert J. Hijmans},
   url          = {https://CRAN.R-project.org/package = terra},
   year         = {2025},
   doi          = {10.32614/CRAN.package.terra},
   organization = {CRAN},
-  version      = {version 1.8-86},
+  version      = {1.8-86},
   cid          = {MN_R_Terra},
   repository   = {CRAN},
   title        = {R package terra: Spatial Data Analysis},
@@ -975,7 +975,7 @@
   year      = {2019},
 }
 
-@SoftwareModule{chubaty2025glc-a,
+@SoftwareModule{chubaty2025glcRpackageversion050-a,
   author  = {Alex M Chubaty and Paul Galpern and Sam Doctolero},
   url     = {https://CRAN.R-project.org/package=grainscape},
   year    = {2025},
@@ -1046,7 +1046,7 @@
   year      = {2023},
 }
 
-@SoftwareVersion{brenning2025rsg-a,
+@SoftwareVersion{brenning2025rsgRpackageversion142-a,
   author       = {Alexander Brenning and Donovan Bangs and Marc Becker},
   title        = {RSAGA: SAGA Geoprocessing and Terrain Analysis},
   url          = {https://CRAN.R-project.org/package=RSAGA},
@@ -1068,7 +1068,7 @@
   year    = {2015},
 }
 
-@SoftwareModule{barrett2026deo-a,
+@SoftwareModule{barrett2026deoRpackageversion11821-a,
   author  = {Tyson Barrett and Matt Dowle and Arun Srinivasan and Jan Gorecki and Michael Chirico and Toby Hocking and Benjamin Schwendinger and Ivan Krylov},
   url     = {https://CRAN.R-project.org/package=data.table},
   year    = {2026},
@@ -1304,21 +1304,25 @@
   year     = {2022},
 }
 
-@Manual{asd2025csv-a,
-  author = {{Anaconda Software Distribution}},
-  title  = {Computer software. Vers. 2-2.4.0},
-  url    = {https://anaconda.com},
-  year   = {2025},
+@Software{asd2025asd2-240-a,
+  author  = {{Anaconda Software Distribution}},
+  title   = {Anaconda Software Distribution},
+  url     = {https://anaconda.com},
+  version = {2-2.4.0},
+  date    = {2025},
+  urldate = {2026-11-11},
 }
 
-@Manual{gdt2025gra-a,
+@Software{gdt2025gra84-a,
   author       = {{GRASS Development Team}},
   title        = {Geographic Resources Analysis Support System (GRASS GIS) Software, Version 8.4},
+  url          = {https://grass.osgeo.org},
+  version      = {8.4},
+  date         = {2025},
   doi          = {10.5281/zenodo.5176030},
   organization = {Open Source Geospatial Foundation},
-  url          = {https://grass.osgeo.org},
-  address      = {USA},
-  year         = {2025},
+  urldate      = {2026-11-11},
+  location     = {USA},
 }
 
 @Article{forbes2020rol-a,
@@ -1562,17 +1566,17 @@
   organization = {EnviDat},
 }
 
-@Software{ekw2026mtf-a,
+@Software{ekw2026mtf001-a,
   author       = {{Ezemvelo KZN Wildlife}},
-  date         = {2026-04-30},
   editor       = {Paul Gordijn},
   title        = {Management tools for Ezemvelo KZN Wildlife spatial data},
-  howpublished = {GitHub},
-  language     = {EN},
-  organization = {Ezemvelo KZN Wildlife},
-  type         = {software},
   url          = {https://github.com/ekznw/ekznwr},
   version      = {0.01},
+  date         = {2026-04-30},
+  organization = {Ezemvelo KZN Wildlife},
+  howpublished = {GitHub},
+  language     = {EN},
+  type         = {software},
 }
 
 @Article{karger2017cah-a,
@@ -1997,6 +2001,28 @@
   publisher    = {Elsevier},
 }
 
+@Software{esri2026ap373-a,
+  author    = {{Esri}},
+  title     = {ArcGIS Pro},
+  url       = {https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview},
+  version   = {3.7.3},
+  date      = {2026-10-15},
+  publisher = {Environmental Systems Research Institute},
+  urldate   = {2026-11-11},
+  location  = {Redlands, California},
+}
+
+@Software{esri2021a1082-a,
+  author    = {{Esri}},
+  title     = {ArcMap},
+  url       = {https://desktop.arcgis.com/en/arcmap/},
+  version   = {10.8.2},
+  date      = {2021-12-09},
+  publisher = {Environmental Systems Research Institute},
+  urldate   = {2026-11-11},
+  location  = {Redlands, California},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 @Comment{jabref-meta: fileDirectory:./files;}
@@ -2009,4 +2035,4 @@
 1 SearchGroup:Software\;0\;title=package or title=software or title=module or entrytype=software or comment=software\;0\;0\;1\;\;WINDOW_MAXIMIZE\;Software & modules\;;
 }
 
-@Comment{jabref-meta: keypatterndefault:[auth:lower][year][shorttitleINI:lower]-[alpha];}
+@Comment{jabref-meta: keypatterndefault:[auth:lower][year][shorttitleINI:lower]-[version]-[alpha];}
